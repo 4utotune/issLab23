@@ -202,8 +202,8 @@ div.imagedesc{
  
 <h2>Requirements</h2>
 Dopo un colloquio con il cliente sono emersi i seguenti requisiti:
-	<br>Req1:</br> Percorrere (una volta) il bordo perimetrale della stanza
-	<br>Req2:</br>Fermarsi di 5 sec quando rilevato dal sonar
+	<br>Req1: Percorrere (una volta) il bordo perimetrale della stanza
+	<br>Req2:Fermarsi di 5 sec quando rilevato dal sonar
 <div class="remark">
 Copy here the EXACT text fiven by the customer.
 </div>
@@ -211,48 +211,48 @@ Copy here the EXACT text fiven by the customer.
  
 
 <h2>Requirement analysis</h2>
-Dai requisiti emerge che possono essere adottate 3 strategie:
-- Strategia sincrona: effettuare tutte le operazioni tramite HTTP
-- Strategia asincrona: effettuare tutte le operazioni tramite WebSocket
-- Strategia ibrida: unire le due strategie precedenti, per avere un maggiore controllo sul robot
+Dai requisiti emerge che possono essere adottate 3 strategie:<br>
+- Strategia sincrona: effettuare tutte le operazioni tramite HTTP<br>
+- Strategia asincrona: effettuare tutte le operazioni tramite WebSocket<br>
+- Strategia ibrida: unire le due strategie precedenti, per avere un maggiore controllo sul robot<br>
 </div>
 
 <h2>Problem analysis</h2>
-Key-points HTTP:
-- Request-response bloccante
-- Agevola il Testing
-- Da usare solo con webpage
-- Poco efficiente
-- Codifica semplice
+Key-points HTTP:<br>
+- Request-response bloccante<br>
+- Agevola il Testing<br>
+- Da usare solo con webpage<br>
+- Poco efficiente<br>
+- Codifica semplice<br>
 
-Key-points WebSocket:
-- Complica il Testing
-- Asincrono
-- Funzioni di callback
-- Complica la Codifica
-- Efficiente
+Key-points WebSocket:<br>
+- Complica il Testing<br>
+- Asincrono<br>
+- Funzioni di callback<br>
+- Complica la Codifica<br>
+- Efficiente<br>
 
 <h2>Test plans</h2> 
 
 
 <h2>Project</h2> 
-Req.1 - Strategia per percorrere l'intero perimetro:
+Req.1 - Strategia per percorrere l'intero perimetro:<br>
 <code>for(int i=0; i<4; i++){
     doForward();
     moveLeft();
 }
-</code>
+</code><br>
 La strategia è la medesima per comandi sincroni e asincroni.
 
 </div>
 
 <h2>Testing</h2> 
-Occorre eseguire i seguenti test:
-    - Verificare che il robot effettui il percorso richiesto almeno una volta
-    - Verificare che il robot si fermi quando rilevato dal sonar
-In base alla strategia adottata è possibile verificare:
-    - Il robot abbia curvato 4 volte nella stessa direzione
-    - Il robot sia stato rilevato 2 volte dal sonar
+Occorre eseguire i seguenti test:<br>
+    - Verificare che il robot effettui il percorso richiesto almeno una volta<br>
+    - Verificare che il robot si fermi quando rilevato dal sonar<br>
+In base alla strategia adottata è possibile verificare:<br>
+    - Il robot abbia curvato 4 volte nella stessa direzione<br>
+    - Il robot sia stato rilevato 2 volte dal sonar<br>
 <h2>Deployment</h2> 
 
  
@@ -273,7 +273,7 @@ In base alla strategia adottata è possibile verificare:
 
 <div style="background-color:rgba(86, 56, 253, 0.9); width:60%;text-align:left;color:white">
 By Gabriele Tassinari email: gabriele.tassinari2@studio.unibo.it, 
-<img src="../../Downloads/gabriele.jpeg" alt="mbot" width="15%" height="15%">
+<img src="./gabriele.jpeg" alt="mbot" width="15%" height="15%">
 GIT repo: https://github.com/4utotune/issLab23 
 </div> 
 </body>
